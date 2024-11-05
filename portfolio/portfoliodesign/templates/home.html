@@ -1,0 +1,135 @@
+{% extends "layout.html" %}
+{% load static  %}
+
+{% block  body%}
+
+<div class="main-section">
+    <h1>
+        Mercy Ogalo
+    </h1>
+    <h2>
+        Frontend developer
+    </h2>
+</div>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+           <h2 class="about-heading"> ABOUT ME </h2>
+            <p class="about-description  ms-2">
+             I'm Mercy Ogalo, a skilled and ambitious frontend developer with a deep passion for creating beautiful and intuitive websites. I'm a hardworking individual who is dedicated to honing her craft and continuously learning and growing in the dynamic field of technology.I'm driven by a strong desire to succeed and is constantly seeking out new opportunities to challenge myself and expand my skillset. With a positive attitude, enthusiasm, and unwavering determination set her apart as a standout developer. I'm working hard to become a full stack developer int he near future.
+            </p>
+            <a class="link-buttons" href="#skills">View my projects  </a>
+        </div>
+        <div class="col-sm-6">
+            <img src="{% static 'images/personal-image.jpg' %}" alt=""class="about-image img-fluid">
+        </div>
+    </div>
+</div>
+
+
+
+<div class="container">
+    <h2  class="heading"> Services </h2>
+    <div class="row services-row">
+
+     <div class="col-sm-3  services-description">
+      <h2> Coding  </h2>
+      <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex doloremq</p>
+     </div>
+
+     <div class="col-sm-3  services-description">
+         <h2>Wireframing </h2>
+         <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex doloremq</p>
+     </div>
+
+     <div class="col-sm-3  services-description">
+        <h2>Designing</h2>
+        <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex doloremq</p>
+     </div>
+
+    </div>
+</div>
+
+
+
+
+
+
+<div class="container ">
+    <div class="row project-row text-center">
+       <div class="col-sm-12 ">
+        <h2> Portfolio</h2>
+         <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit esse ipsam laboriosam dolor illum aut nesciunt laborum? Doloremque quod atque dolorem, sed incidunt suscipit fuga, adipisci repellat tempore maiores nostrum? </p>
+       </div>
+
+        <div class="col-sm-5">
+       <img src="{% static 'images/Project-image-one.png' %}" alt="" class="project-image img-fluid">
+        </div>
+
+        <div class="col-sm-5">
+        <img src="{% static 'images/Project-image-two.png' %}" alt="" class="project-image img-fluid">
+        </div>
+
+        <div class="col-sm-5">
+        <img src="{% static 'images/Project-image-three.png' %}" alt="" class="project-imagev img-fluid">
+        </div>
+
+        <div class="col-sm-5">
+            <img src="{% static 'images/Project-image-four.png' %}" alt="" class="project-image img-fluid">
+            </div>
+
+    </div>
+</div>
+
+
+
+
+
+<div class="container">
+    <div class="row mt-2 mb-2">
+        <div class="col-sm-10 skills-section">
+            <div class="col-sm-4">
+          <h3> Technical skills</h3>
+          <p>
+            <span>html<i class="fa-brands fa-html5  ms-1 me-1" style="color:#DE7C7D;"></i></span>
+              <span>Css3<i class="fa-brands fa-css3 ms-1 me-1" style="color: #DE7C7D;"></i></span>
+             <span>Javascript  <i class="fa-brands  fa-js ms-1 me-1" style="color: #DE7C7D;"></i></span>
+             <span>Bootstrap<i class="fa-brands fa-bootstrap ms-1 me-1" style="color: #DE7C7D;"></i></span>
+             <span>Reactjs<i class="fa-brands fa-react  ms-1 me-1" style="color: #DE7C7D;"></i></span>
+             <span>Figma<i class="fa-brands fa-figma  ms-1 me-1" style="color: #DE7C7D;"></i> </span>
+          </p>
+            </div>
+
+            <div class="col-sm-4">
+                <h3 class="mb-3">  Lets bring your imagination to reality</h3>
+                <a href="mailto:ogalomercy8@gmail.com" class="link-buttons">Contact me</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<div class="container">
+    <div class="row text-center mt-2 mb-2">
+        <div class="col-sm-12">
+            <a href="https://github.com/mercyogalo"><i class="fa-brands fa-github ms-2 me-2" style="color: #DE7C7D;"></i></a>
+            <a href="https://www.tiktok.com/@mercyfrontenddeveloper"><i class="fa-brands fa-tiktok ms-2 me-2" style="color: #DE7C7D;"></i></a>
+            <a href="https://www.linkedin.com/in/mercy-ogalo-9a1b69272/"><i class="fa-brands fa-linkedin ms-2 me-2" style="color: #DE7C7D;"></i></a>
+            <a href="https://twitter.com/ogalo_mercy"><i class="fa-brands fa-twitter ms-2 me-2" style="color: #DE7C7D;"></i></a>
+        </div>
+        <div class="col-sm-12 ">
+            Copyright<i class="fa-solid fa-copyright ms-1 me-1" style="color: #DE7C7D;"></i>2024. All Rights Reserved
+        </div>
+    </div>
+</div>
+
+
+
+
+{% endblock  %}
