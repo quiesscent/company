@@ -31,8 +31,6 @@ def serviceDetails(request):
 def services(request):
     return render(request, 'services.html')
 
-def  starterPage(request):
-    return render(request, 'starter-page.html')
 
 def team(request):
     return render(request, 'team.html')

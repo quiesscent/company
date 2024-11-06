@@ -30,7 +30,6 @@ urlpatterns = [
     path('pricing/',views.pricing,name="pricing"),
     path('serviceDetails/',views.serviceDetails,name="serviceDetails"),
     path('services/',views.services,name="services"),
-    path('starterPage/',views.starterPage,name="starterPage"),
     path('team/',views.team,name="team"),
     path('testimonials/',views.testimonials,name="testimonials")
 ]
