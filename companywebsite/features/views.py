@@ -28,6 +28,9 @@ def pricing(request):
 def serviceDetails(request):
     return render(request, 'service-details.html')
 
+def services(request):
+    return render(request, 'services.html')
+
 def  starterPage(request):
     return render(request, 'starter-page.html')
 
