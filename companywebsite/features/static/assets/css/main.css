@@ -19,33 +19,34 @@
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
-  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
-  --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #111111; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #1bbd36; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --background-color: #1D1D1D; /* Background color for the entire website, including individual sections */
+  --default-color: #A37238; /* Default color used for the majority of the text content across the entire website */
+  --heading-color: #ffffff; /* Color for headings, subheadings and title throughout the website */
+  --accent-color: #5E4220; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+--secondary-color:#919191;
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
   --nav-color: #444444;  /* The default color of the main navmenu links */
-  --nav-hover-color: #1bbd36; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-hover-color: #7A5634; /* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #444444; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #1bbd36; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-dropdown-hover-color: #7A5634; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
 .light-background {
-  --background-color: #f7f7f7;
+  --background-color: #1D1D1D;
   --surface-color: #ffffff;
 }
 
 .dark-background {
-  --background-color: #060606;
+  --background-color: #131313;
   --default-color: #ffffff;
   --heading-color: #ffffff;
   --surface-color: #252525;
@@ -975,7 +976,7 @@ section,
 
 .about .our-story {
   padding: 40px;
-  background-color: color-mix(in srgb, var(--default-color), transparent 96%);
+  background-color: color-mix(in srgb, var(--secondary-color), transparent 96%);
 }
 
 @media (min-width: 991px) {
@@ -987,15 +988,17 @@ section,
 .about .our-story h4 {
   text-transform: uppercase;
   font-size: 1.1rem;
-  color: color-mix(in srgb, var(--default-color), transparent 50%);
+  color: color-mix(in srgb, var(--secondary-color), transparent 50%);
 }
 
 .about .our-story h3 {
   font-size: 2.25rem;
   font-weight: 700;
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  color: color-mix(in srgb, var(--secondary-color), transparent 20%);
 }
-
+.about .our-story p{
+  color: var(--secondary-color);
+}
 .about .our-story p:last-child {
   margin-bottom: 0;
 }
@@ -1019,6 +1022,9 @@ section,
   color: var(--accent-color);
 }
 
+.about ul span{
+  color: var(--secondary-color);
+}
 .about .watch-video i {
   font-size: 2rem;
   transition: 0.3s;
@@ -1027,7 +1033,7 @@ section,
 
 .about .watch-video a {
   font-weight: 600;
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  color: color-mix(in srgb, var(--secondary-color), transparent 20%);
   margin-left: 8px;
   transition: 0.3s;
 }
