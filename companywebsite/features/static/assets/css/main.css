@@ -31,7 +31,7 @@
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
   --nav-color: #444444;  /* The default color of the main navmenu links */
-  --nav-hover-color: #7A5634; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-hover-color: #A37238; /* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #444444; /* Used for navigation links of the dropdown items in the navigation menu. */
@@ -1428,6 +1428,7 @@ section,
   padding: 30px;
   position: relative;
   height: 100%;
+  border-radius: 15px;
 }
 
 .testimonials .testimonial-item .testimonial-img {
@@ -1461,7 +1462,7 @@ section,
 
 .testimonials .testimonial-item .quote-icon-left,
 .testimonials .testimonial-item .quote-icon-right {
-  color: color-mix(in srgb, var(--accent-color), transparent 50%);
+  color: color-mix(in srgb, #7A5634, transparent 50%);
   font-size: 26px;
   line-height: 0;
 }
@@ -1767,11 +1768,18 @@ section,
   padding: 0;
 }
 
+
+
 /*--------------------------------------------------------------
 # Clients Section
 --------------------------------------------------------------*/
+.clients .clients-wrap {
+  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
+  border-left: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
+}
 
 .clients .client-logo {
+  background-color:#A37238;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1779,12 +1787,14 @@ section,
 }
 
 .clients .client-logo img {
-  max-width: 50%;
+  padding: 40px;
+  max-width: 80%;
   transition: 0.3s;
 }
 
 @media (max-width: 640px) {
   .clients .client-logo img {
+    padding: 20px;
     max-width: 50%;
   }
 }
@@ -1792,6 +1802,8 @@ section,
 .clients .client-logo:hover img {
   transform: scale(1.1);
 }
+
+
 
 /*--------------------------------------------------------------
 # Pricing Section
