@@ -1297,33 +1297,9 @@ section,
   bottom: 0;
 }
 
-/*--------------------------------------------------------------
-# Clients Section
---------------------------------------------------------------*/
 
 
-.clients .client-logo {
-  background-color: #51391D;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
 
-.clients .client-logo img {
-  max-width: 10%;
-  transition: 0.3s;
-}
-
-@media (max-width: 640px) {
-  .clients .client-logo img {
-    max-width: 5%;
-  }
-}
-
-.clients .client-logo:hover img {
-  transform: scale(1.1);
-}
 
 /*--------------------------------------------------------------
 # Skills Section
