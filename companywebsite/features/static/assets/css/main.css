@@ -1303,7 +1303,7 @@ section,
 
 
 .clients .client-logo {
-  background-color: var(--surface-color);
+  background-color: #51391D;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1311,15 +1311,13 @@ section,
 }
 
 .clients .client-logo img {
-  padding: 50px;
-  max-width: 80%;
+  max-width: 10%;
   transition: 0.3s;
 }
 
 @media (max-width: 640px) {
   .clients .client-logo img {
-    padding: 30px;
-    max-width: 50%;
+    max-width: 5%;
   }
 }
 
